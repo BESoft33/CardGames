@@ -1,0 +1,13 @@
+# Options for drift's code generator (the build_runner command in
+# AGENTS.md §4) and its migration tool, `dart run drift_dev make-migrations`,
+# which keeps a snapshot of every schema version in drift_schemas/ and
+# writes the migration tests in test/drift/ (docs/decisions.md D-027).
+targets:
+  $default:
+    builders:
+      drift_dev:
+        options:
+          databases:
+            local_database: lib/data/local_database.dart
+          schema_dir: drift_schemas/
+          test_dir: test/drift/

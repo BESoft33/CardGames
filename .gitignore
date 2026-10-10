@@ -1,0 +1,30 @@
+# Dart and Flutter build output
+.dart_tool/
+build/
+coverage/
+*.iml
+.idea/
+.vscode/
+
+# Secrets. Never commit these (AGENTS.md §12).
+# Env files are passed with --dart-define-from-file; commit only *.example.json.
+**/env/*.json
+!**/env/*.example.json
+.env
+.env.*
+*.jks
+*.keystore
+key.properties
+*.p12
+*.p8
+*.mobileprovision
+*.provisionprofile
+
+# Release symbol files from --split-debug-info stay out of the repo.
+build/symbols/
+# Widget Preview related
+.widget_preview/
+
+# Supabase CLI working files.
+supabase/.temp/
+supabase/.branches/

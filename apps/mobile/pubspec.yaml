@@ -1,0 +1,61 @@
+name: card_games
+description: A collection of card games for Android and iOS, starting with Twenty-Nine.
+publish_to: none
+version: 0.1.0+1
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+  flutter: ">=3.47.0"
+
+dependencies:
+  bots: any
+  drift: ^2.35.1
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^3.4.3
+  flutter_secure_storage: ^11.2.0
+  game_core: any
+  game_twentynine: any
+  go_router: ^18.0.2
+  google_sign_in: ^7.2.0
+  gotrue: ^2.27.2
+  http: ^1.6.0
+  intl: any
+  material_ui: ^1.5.0
+  path: ^1.9.1
+  path_provider: ^2.1.6
+  sqlite3: ^3.7.0
+  sync_protocol: any
+
+dev_dependencies:
+  build_runner: ^2.16.1
+  cardgames_server: any
+  drift_dev: ^2.35.1
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  shelf: any
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    # Owner-provided card art (AGENTS.md §13). Read-only.
+    - assets/cards/
+    # Licence texts the app shows that no Dart package carries (D-028).
+    - assets/licenses/
+
+# The app icon, from the owner's logo (docs/decisions.md D-042). After the
+# sources in branding/ change, run `dart run flutter_launcher_icons`.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "branding/app_icon.png"
+  adaptive_icon_background: "branding/app_icon_background.png"
+  adaptive_icon_foreground: "branding/app_icon_foreground.png"
+  remove_alpha_ios: true
+  background_color_ios: "#020A1F"

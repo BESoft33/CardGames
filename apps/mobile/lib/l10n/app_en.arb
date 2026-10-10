@@ -1,0 +1,1167 @@
+{
+  "@@locale": "en",
+  "appTitle": "card.games",
+  "@appTitle": {
+    "description": "Name of the app, shown in the lobby app bar and the task switcher."
+  },
+  "lobbyHeading": "Choose a game",
+  "@lobbyHeading": {
+    "description": "Heading above the list of games in the lobby."
+  },
+  "gameTwentyNineName": "Twenty-Nine",
+  "@gameTwentyNineName": {
+    "description": "Name of the card game 29."
+  },
+  "gameComingSoon": "Coming soon",
+  "@gameComingSoon": {
+    "description": "Shown under a game that cannot be played yet."
+  },
+  "cardFaceLabel": "{rank} of {suit}",
+  "@cardFaceLabel": {
+    "description": "Name of a face-up card for screen readers, for example 'Jack of Hearts'.",
+    "placeholders": {
+      "rank": {
+        "type": "String",
+        "example": "Jack"
+      },
+      "suit": {
+        "type": "String",
+        "example": "Hearts"
+      }
+    }
+  },
+  "cardBackLabel": "Face-down card",
+  "@cardBackLabel": {
+    "description": "Name of a face-down card for screen readers."
+  },
+  "rankName": "{rank, select, two{Two} three{Three} four{Four} five{Five} six{Six} seven{Seven} eight{Eight} nine{Nine} ten{Ten} jack{Jack} queen{Queen} king{King} ace{Ace} other{Unknown rank}}",
+  "@rankName": {
+    "description": "Name of a card rank. The key is the rank's code name.",
+    "placeholders": {
+      "rank": {
+        "type": "String"
+      }
+    }
+  },
+  "suitName": "{suit, select, spades{Spades} hearts{Hearts} diamonds{Diamonds} clubs{Clubs} other{Unknown suit}}",
+  "@suitName": {
+    "description": "Name of a card suit. The key is the suit's code name.",
+    "placeholders": {
+      "suit": {
+        "type": "String"
+      }
+    }
+  },
+  "missingCardAsset": "Missing asset",
+  "@missingCardAsset": {
+    "description": "Debug builds only: label on the stand-in for card art the owner has not supplied yet."
+  },
+  "debugCardGalleryTitle": "Card assets",
+  "@debugCardGalleryTitle": {
+    "description": "Debug builds only: title of the screen that shows every card image."
+  },
+  "gameTwentyNineSubtitle": "Against three computer players",
+  "@gameTwentyNineSubtitle": {
+    "description": "Lobby: what you play in Twenty-Nine for now."
+  },
+  "setupTitle": "New match",
+  "@setupTitle": {
+    "description": "Title of the screen where a Twenty-Nine match is set up."
+  },
+  "setupContinue": "Continue your unfinished game",
+  "@setupContinue": {
+    "description": "Button that goes back to the game the player left unfinished."
+  },
+  "setupBotLevel": "Computer players",
+  "@setupBotLevel": {
+    "description": "Heading above the choice of bot skill."
+  },
+  "botLevelName": "{level, select, beginner{Beginner} casual{Casual} skilled{Skilled} expert{Expert} master{Master} other{Bot}}",
+  "@botLevelName": {
+    "description": "Name of a bot skill level. The key is the level code name.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "botLevelHelp": "{level, select, beginner{Still learning, and makes mistakes.} casual{Plays sensibly, but forgets earlier tricks.} skilled{Counts every card played.} expert{Works each deal out to the end.} master{Also reads the bidding. The strongest.} other{}}",
+  "@botLevelHelp": {
+    "description": "One line about a bot skill level, under the level choice. The key is the level code name.",
+    "placeholders": {
+      "level": {
+        "type": "String"
+      }
+    }
+  },
+  "setupRules": "Rules",
+  "@setupRules": {
+    "description": "Heading of the rule options."
+  },
+  "setupResetRules": "Use Nepal table rules",
+  "@setupResetRules": {
+    "description": "Button that resets every rule option to the defaults."
+  },
+  "setupStart": "Start match",
+  "@setupStart": {
+    "description": "Button that starts the match."
+  },
+  "ruleDirection": "Play direction",
+  "@ruleDirection": {
+    "description": "Rule option: which way play passes."
+  },
+  "ruleDirectionCounterClockwise": "Counter-clockwise",
+  "@ruleDirectionCounterClockwise": {
+    "description": "Play passes to the right."
+  },
+  "ruleDirectionClockwise": "Clockwise",
+  "@ruleDirectionClockwise": {
+    "description": "Play passes to the left."
+  },
+  "ruleMinBid": "Lowest bid",
+  "@ruleMinBid": {
+    "description": "Rule option: the lowest bid allowed."
+  },
+  "ruleLastTrickPoint": "Last trick worth a point (29 in all)",
+  "@ruleLastTrickPoint": {
+    "description": "Rule option."
+  },
+  "ruleAskTrump": "Cannot follow suit while trump is hidden",
+  "@ruleAskTrump": {
+    "description": "Rule option heading: what a player who cannot follow suit may do."
+  },
+  "ruleAskTrumpOptional": "May ask; must then trump",
+  "@ruleAskTrumpOptional": {
+    "description": "Asking for trump is optional; after asking, the player must play a trump if they hold one."
+  },
+  "ruleAskTrumpMandatory": "Must ask; may play anything",
+  "@ruleAskTrumpMandatory": {
+    "description": "Asking for trump is required; afterwards any card may be played."
+  },
+  "ruleAllPass": "If the first three pass",
+  "@ruleAllPass": {
+    "description": "Rule option heading."
+  },
+  "ruleAllPassDealerMustBid": "Dealer must bid",
+  "@ruleAllPassDealerMustBid": {
+    "description": "The dealer must bid the minimum."
+  },
+  "ruleAllPassRedeal": "Redeal",
+  "@ruleAllPassRedeal": {
+    "description": "The cards are dealt again."
+  },
+  "rulePair": "Pair (King and Queen of trump)",
+  "@rulePair": {
+    "description": "Rule option."
+  },
+  "ruleDoubleRedouble": "Double and redouble",
+  "@ruleDoubleRedouble": {
+    "description": "Rule option."
+  },
+  "ruleSeventhCard": "Seventh card",
+  "@ruleSeventhCard": {
+    "description": "Rule option: the bidder may make their seventh card the trump."
+  },
+  "ruleRedealChecks": "Redeal weak or lopsided deals",
+  "@ruleRedealChecks": {
+    "description": "Rule option."
+  },
+  "ruleSingleHand": "Single hand",
+  "@ruleSingleHand": {
+    "description": "Rule option: a player may try to win all eight tricks alone."
+  },
+  "ruleTarget": "Game points to win: {points}",
+  "@ruleTarget": {
+    "description": "Rule option with its current value.",
+    "placeholders": {
+      "points": {
+        "type": "int"
+      }
+    }
+  },
+  "tableTitle": "Twenty-Nine",
+  "@tableTitle": {
+    "description": "Title of the table screen."
+  },
+  "seatYou": "You",
+  "@seatYou": {
+    "description": "The player's own seat."
+  },
+  "seatPartner": "Partner",
+  "@seatPartner": {
+    "description": "The seat opposite the player."
+  },
+  "seatLeft": "Left",
+  "@seatLeft": {
+    "description": "The opponent on the player's left."
+  },
+  "seatRight": "Right",
+  "@seatRight": {
+    "description": "The opponent on the player's right."
+  },
+  "dealerBadge": "Dealer",
+  "@dealerBadge": {
+    "description": "Marks the dealer's seat."
+  },
+  "cardsInHand": "{count, plural, one{1 card} other{{count} cards}}",
+  "@cardsInHand": {
+    "description": "How many cards a player holds.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "callPass": "Pass",
+  "@callPass": {
+    "description": "A pass in the auction."
+  },
+  "callBid": "{value}",
+  "@callBid": {
+    "description": "A bid in the auction, shown on the seat.",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "callMatch": "Match {value}",
+  "@callMatch": {
+    "description": "A player matched a bid of {value}, shown under their name, for example 'Match 17'.",
+    "placeholders": {
+      "value": {
+        "type": "int",
+        "example": "17"
+      }
+    }
+  },
+  "raiseBid": "+{step} ({bid})",
+  "@raiseBid": {
+    "description": "A button that bids {step} above the highest bid, showing the bid it makes, for example '+1 (17)'.",
+    "placeholders": {
+      "step": {
+        "type": "int",
+        "example": "1"
+      },
+      "bid": {
+        "type": "int",
+        "example": "17"
+      }
+    }
+  },
+  "matchBidButton": "Match",
+  "@matchBidButton": {
+    "description": "The Match button while the player may not match: only the old bidder may (AGENTS.md §6.4)."
+  },
+  "matchBid": "Match ({bid})",
+  "@matchBid": {
+    "description": "A button that matches the new bidder's bid, showing it, for example 'Match (17)'.",
+    "placeholders": {
+      "bid": {
+        "type": "int",
+        "example": "17"
+      }
+    }
+  },
+  "bidButton": "Bid {value}",
+  "@bidButton": {
+    "description": "Button to bid a value.",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "promptBid": "Your bid",
+  "@promptBid": {
+    "description": "Prompt when it is the player's turn in the auction."
+  },
+  "promptMustBid": "Everyone passed: you must bid",
+  "@promptMustBid": {
+    "description": "Prompt when the dealer is forced to bid."
+  },
+  "promptChooseTrump": "Choose trump. Only you will know it.",
+  "@promptChooseTrump": {
+    "description": "Prompt for the bidder to choose trump."
+  },
+  "seventhCardButton": "Seventh card",
+  "@seventhCardButton": {
+    "description": "Button to make the seventh card the trump."
+  },
+  "promptDouble": "Double the stake?",
+  "@promptDouble": {
+    "description": "Prompt for an opponent of the bidder."
+  },
+  "doubleButton": "Double",
+  "@doubleButton": {
+    "description": "Button to double."
+  },
+  "noDoubleButton": "No double",
+  "@noDoubleButton": {
+    "description": "Button to decline doubling."
+  },
+  "promptRedouble": "Your side was doubled. Redouble?",
+  "@promptRedouble": {
+    "description": "Prompt for the bidder or partner."
+  },
+  "redoubleButton": "Redouble",
+  "@redoubleButton": {
+    "description": "Button to redouble."
+  },
+  "noRedoubleButton": "No redouble",
+  "@noRedoubleButton": {
+    "description": "Button to decline redoubling."
+  },
+  "promptSingleHand": "Play single hand? You must win all eight tricks alone.",
+  "@promptSingleHand": {
+    "description": "Prompt during the single-hand window."
+  },
+  "singleHandButton": "Single hand",
+  "@singleHandButton": {
+    "description": "Button to declare single hand."
+  },
+  "noSingleHandButton": "No",
+  "@noSingleHandButton": {
+    "description": "Button to decline single hand."
+  },
+  "promptPair": "You hold the King and Queen of trump.",
+  "@promptPair": {
+    "description": "Prompt when the player may declare the Pair."
+  },
+  "declarePairButton": "Declare Pair",
+  "@declarePairButton": {
+    "description": "Button to declare the Pair."
+  },
+  "notNowButton": "Not now",
+  "@notNowButton": {
+    "description": "Button to decline the Pair for now."
+  },
+  "askTrumpButton": "Ask for trump",
+  "@askTrumpButton": {
+    "description": "Button to ask for the hidden trump."
+  },
+  "promptPlay": "Your turn",
+  "@promptPlay": {
+    "description": "Prompt when the player must play a card."
+  },
+  "promptMustTrump": "Play a trump if you have one",
+  "@promptMustTrump": {
+    "description": "Prompt after asking for trump."
+  },
+  "waitingFor": "{seat} to play",
+  "@waitingFor": {
+    "description": "Who the table is waiting for.",
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      }
+    }
+  },
+  "waiting": "Waiting…",
+  "@waiting": {
+    "description": "When the table waits for an unnamed player."
+  },
+  "trumpLabel": "Trump",
+  "@trumpLabel": {
+    "description": "Label of the trump marker."
+  },
+  "trumpHidden": "Hidden",
+  "@trumpHidden": {
+    "description": "The trump has not been revealed."
+  },
+  "trumpOnlyYou": "Only you know",
+  "@trumpOnlyYou": {
+    "description": "The bidder's own hidden trump."
+  },
+  "trumpNone": "No trump",
+  "@trumpNone": {
+    "description": "There is no trump in a single-hand deal."
+  },
+  "contractLine": "{seat} bid {value}",
+  "@contractLine": {
+    "description": "Who won the auction and with what bid.",
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      },
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "targetLine": "Target {target}",
+  "@targetLine": {
+    "description": "Points the bidding side needs.",
+    "placeholders": {
+      "target": {
+        "type": "int"
+      }
+    }
+  },
+  "stakeLine": "Stake ×{stake}",
+  "@stakeLine": {
+    "description": "The stake when it is above 1.",
+    "placeholders": {
+      "stake": {
+        "type": "int"
+      }
+    }
+  },
+  "pointsLine": "Card points: us {us}, them {them}",
+  "@pointsLine": {
+    "description": "Card points won so far in the deal.",
+    "placeholders": {
+      "us": {
+        "type": "int"
+      },
+      "them": {
+        "type": "int"
+      }
+    }
+  },
+  "scoreUs": "Us",
+  "@scoreUs": {
+    "description": "The player's team in the score."
+  },
+  "scoreThem": "Them",
+  "@scoreThem": {
+    "description": "The other team in the score."
+  },
+  "teamScore": "{team} {score}",
+  "@teamScore": {
+    "description": "A team's game points under its score card, for example 'Us 3'.",
+    "placeholders": {
+      "team": {
+        "type": "String",
+        "example": "Us"
+      },
+      "score": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+  "matchesAhead": "{count, plural, =1{1 match ahead} other{{count} matches ahead}}",
+  "@matchesAhead": {
+    "description": "A team's record in the game when it has won more matches than it lost.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "matchesBehind": "{count, plural, =1{1 match behind} other{{count} matches behind}}",
+  "@matchesBehind": {
+    "description": "A team's record in the game when it has lost more matches than it won.",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "matchesLevel": "level in matches",
+  "@matchesLevel": {
+    "description": "A team's record in the game when it has won as many matches as it lost."
+  },
+  "teamCornerLabel": "{team}: {score} game points, {standing}",
+  "@teamCornerLabel": {
+    "description": "What screen readers say for a team's corner of the table, for example 'Us: 3 game points, 1 match ahead'.",
+    "placeholders": {
+      "team": {
+        "type": "String",
+        "example": "Us"
+      },
+      "score": {
+        "type": "int",
+        "example": "3"
+      },
+      "standing": {
+        "type": "String",
+        "example": "1 match ahead"
+      }
+    }
+  },
+  "singleHandBy": "{seat} plays single hand",
+  "@singleHandBy": {
+    "description": "Shown during a single-hand deal.",
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      }
+    }
+  },
+  "askedTrumpBy": "{seat} asked for trump",
+  "@askedTrumpBy": {
+    "description": "Shown in the trick where trump was revealed.",
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      }
+    }
+  },
+  "resultMade": "Contract made",
+  "@resultMade": {
+    "description": "Deal result title."
+  },
+  "resultFailed": "Contract failed",
+  "@resultFailed": {
+    "description": "Deal result title."
+  },
+  "resultVoid": "Deal void: trump was never revealed",
+  "@resultVoid": {
+    "description": "Deal result title."
+  },
+  "resultSingleHandWon": "Single hand won",
+  "@resultSingleHandWon": {
+    "description": "Deal result title."
+  },
+  "resultSingleHandLost": "Single hand lost",
+  "@resultSingleHandLost": {
+    "description": "Deal result title."
+  },
+  "resultChange": "{team} {change}",
+  "@resultChange": {
+    "description": "The change in a team's game points, for example 'Us +1'.",
+    "placeholders": {
+      "team": {
+        "type": "String"
+      },
+      "change": {
+        "type": "String",
+        "example": "+1"
+      }
+    }
+  },
+  "resultScores": "Score: us {us}, them {them}",
+  "@resultScores": {
+    "description": "Game points after the deal.",
+    "placeholders": {
+      "us": {
+        "type": "int"
+      },
+      "them": {
+        "type": "int"
+      }
+    }
+  },
+  "nextDealButton": "Next deal",
+  "@nextDealButton": {
+    "description": "Button that dismisses a deal result."
+  },
+  "finalResultButton": "See the result",
+  "@finalResultButton": {
+    "description": "Button shown after the last deal."
+  },
+  "matchWon": "Your team won the match",
+  "@matchWon": {
+    "description": "Match result."
+  },
+  "matchLost": "Your team lost the match",
+  "@matchLost": {
+    "description": "Match result."
+  },
+  "newMatchButton": "New match",
+  "@newMatchButton": {
+    "description": "Button to set up another match."
+  },
+  "lobbyButton": "Lobby",
+  "@lobbyButton": {
+    "description": "Button back to the lobby."
+  },
+  "leaveTitle": "Quit this game?",
+  "@leaveTitle": {
+    "description": "Title of the dialog shown when the player leaves a match in play."
+  },
+  "leaveBody": "The match stays unfinished and the game ends.",
+  "@leaveBody": {
+    "description": "Body of the dialog shown when the player leaves a match in play."
+  },
+  "quitRefundLine": "You get {amount} EC back from the pot.",
+  "@quitRefundLine": {
+    "description": "In the quit dialog, what quitting now returns.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "1,000"
+      }
+    }
+  },
+  "leaveButton": "Quit",
+  "@leaveButton": {
+    "description": "Button that quits the game in the leave dialog."
+  },
+  "stayButton": "Stay",
+  "@stayButton": {
+    "description": "Cancels leaving."
+  },
+  "resultNoChange": "No change in game points",
+  "@resultNoChange": {
+    "description": "Shown when a deal changes no score."
+  },
+  "resumeFailed": "That match could not be continued.",
+  "@resumeFailed": {
+    "description": "Shown when an unfinished match cannot be resumed."
+  },
+  "trickWonBy": "{seat} won the trick",
+  "@trickWonBy": {
+    "description": "Under the last finished trick.",
+    "placeholders": {
+      "seat": {
+        "type": "String"
+      }
+    }
+  },
+  "setAsideLabel": "Seventh card",
+  "@setAsideLabel": {
+    "description": "Label of the bidder's set-aside seventh card."
+  },
+  "doubledBadge": "Doubled",
+  "@doubledBadge": {
+    "description": "Badge on the seat that doubled."
+  },
+  "redoubledBadge": "Redoubled",
+  "@redoubledBadge": {
+    "description": "Badge on the seat that redoubled."
+  },
+  "pairBadge": "Pair",
+  "@pairBadge": {
+    "description": "Badge on the seat that declared the Pair."
+  },
+  "singleHandBadge": "Single hand",
+  "@singleHandBadge": {
+    "description": "Badge on the single-hand declarer."
+  },
+  "bidderBadge": "Bid {value}",
+  "@bidderBadge": {
+    "description": "Badge on the seat that won the auction.",
+    "placeholders": {
+      "value": {
+        "type": "int"
+      }
+    }
+  },
+  "currencyName": "Earned Coins",
+  "@currencyName": {
+    "description": "Name of the in-app currency, shortened to EC."
+  },
+  "coins": "{amount} EC",
+  "@coins": {
+    "description": "An amount of Earned Coins.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "coinsGained": "+{amount} EC",
+  "@coinsGained": {
+    "description": "Earned Coins received.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "coinsSpent": "−{amount} EC",
+  "@coinsSpent": {
+    "description": "Earned Coins paid out.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "lobbyGuest": "Playing as a guest",
+  "@lobbyGuest": {
+    "description": "Lobby line saying the player has not signed in."
+  },
+  "settingsTitle": "Settings",
+  "@settingsTitle": {
+    "description": "Title of the settings screen and tooltip of its button."
+  },
+  "settingsTableFee": "Table fee",
+  "@settingsTableFee": {
+    "description": "Settings heading: the fee to join a match."
+  },
+  "tableFeeHelp": "Each match costs {fee} EC. Every deal your team wins pays you {deal} EC, winning the match pays {pot} EC, and losing it costs {penalty} EC more.",
+  "@tableFeeHelp": {
+    "description": "What a match at the table fee costs and pays.",
+    "placeholders": {
+      "fee": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "100"
+      },
+      "deal": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "5"
+      },
+      "pot": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "200"
+      },
+      "penalty": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "50"
+      }
+    }
+  },
+  "settingsAccount": "Account",
+  "@settingsAccount": {
+    "description": "Settings heading: the player's account."
+  },
+  "settingsGuest": "Guest",
+  "@settingsGuest": {
+    "description": "The account of a player who has not signed in."
+  },
+  "settingsGuestHelp": "Your matches and coins are kept on this phone.",
+  "@settingsGuestHelp": {
+    "description": "Where a guest's progress is kept."
+  },
+  "settingsAbout": "About",
+  "@settingsAbout": {
+    "description": "Settings heading: about the app."
+  },
+  "settingsVersion": "Version",
+  "@settingsVersion": {
+    "description": "Label of the app's version number."
+  },
+  "settingsLicences": "Licences",
+  "@settingsLicences": {
+    "description": "Opens the licences of the software the app uses."
+  },
+  "setupStakes": "Stakes",
+  "@setupStakes": {
+    "description": "Setup heading: play for coins or for practice."
+  },
+  "tableFeeOption": "{fee} EC table",
+  "@tableFeeOption": {
+    "description": "Choice to play at the table fee chosen in settings.",
+    "placeholders": {
+      "fee": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "practiceOption": "Practice",
+  "@practiceOption": {
+    "description": "Choice to play a free match with no coins."
+  },
+  "practiceHelp": "No fee, and no coins to win.",
+  "@practiceHelp": {
+    "description": "What a practice match costs and pays."
+  },
+  "coinsYouHave": "You have {amount} EC.",
+  "@coinsYouHave": {
+    "description": "How many coins the player may spend.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "coinsShort": "You have {amount} EC, not enough for this table. Play practice, or choose a smaller fee in Settings.",
+  "@coinsShort": {
+    "description": "Shown when the player cannot pay the table fee: how many coins they have, and what they can do.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "changeTableFee": "Change fee",
+  "@changeTableFee": {
+    "description": "Opens the settings to change the table fee."
+  },
+  "newMatchTitle": "Start a new game?",
+  "@newMatchTitle": {
+    "description": "Title of the dialog shown before a new game ends an unfinished one."
+  },
+  "newMatchBody": "Your unfinished game will end. A match in play counts as quit.",
+  "@newMatchBody": {
+    "description": "Body of the dialog shown before a new game ends an unfinished one."
+  },
+  "cancelButton": "Cancel",
+  "@cancelButton": {
+    "description": "Button that closes a dialog without doing anything."
+  },
+  "startButton": "Start",
+  "@startButton": {
+    "description": "Button that starts a new match after a warning."
+  },
+  "notEnoughCoins": "You don't have enough coins for this table.",
+  "@notEnoughCoins": {
+    "description": "Shown when a match could not start for lack of coins."
+  },
+  "dealCoins": "You earn {amount} EC.",
+  "@dealCoins": {
+    "description": "Coins the player earns for a deal their team won.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "matchCoins": "You take {amount} EC from the pot.",
+  "@matchCoins": {
+    "description": "Coins the player takes for winning the match.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "matchPenalty": "Losing adds {amount} EC to the pot.",
+  "@matchPenalty": {
+    "description": "After a lost match at a table fee, the penalty.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "500"
+      }
+    }
+  },
+  "recordLine": "Your team is {standing}.",
+  "@recordLine": {
+    "description": "The player's team's record in the game, for example 'Your team is 1 match ahead.'",
+    "placeholders": {
+      "standing": {
+        "type": "String",
+        "example": "1 match ahead"
+      }
+    }
+  },
+  "playOnQuestion": "Play the next match?",
+  "@playOnQuestion": {
+    "description": "After a match, asks whether to play on in the game."
+  },
+  "nextMatchButton": "Next match",
+  "@nextMatchButton": {
+    "description": "Votes to play the next match of the game."
+  },
+  "endGameButton": "End game",
+  "@endGameButton": {
+    "description": "Votes to end the game."
+  },
+  "gameWon": "Your team won the game",
+  "@gameWon": {
+    "description": "Title when the game ends with the player's team ahead."
+  },
+  "gameLost": "Your team lost the game",
+  "@gameLost": {
+    "description": "Title when the game ends with the player's team behind."
+  },
+  "gameTied": "The game is tied",
+  "@gameTied": {
+    "description": "Title when the game ends level."
+  },
+  "tieRefundLine": "Every fee of the game comes back: {amount} EC.",
+  "@tieRefundLine": {
+    "description": "After a tied game at a table fee, the refund.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern",
+        "example": "400"
+      }
+    }
+  },
+  "newGameButton": "New game",
+  "@newGameButton": {
+    "description": "Starts a new game after one has ended."
+  },
+  "lastMatchLine": "Last match of the game",
+  "@lastMatchLine": {
+    "description": "Shown during the match played with a 2 showing."
+  },
+  "walletSpendable": "You can spend",
+  "@walletSpendable": {
+    "description": "Label under the number of coins the player may spend."
+  },
+  "walletConfirmed": "Confirmed",
+  "@walletConfirmed": {
+    "description": "Label of the balance the server has confirmed."
+  },
+  "walletNotSynced": "Not synced yet",
+  "@walletNotSynced": {
+    "description": "Shown instead of a balance the server has never confirmed."
+  },
+  "walletPending": "Pending",
+  "@walletPending": {
+    "description": "Label of the coins that wait for the server."
+  },
+  "walletPendingHelp": "Coins earned on this phone stay pending until our server has checked your matches.",
+  "@walletPendingHelp": {
+    "description": "Explains pending coins."
+  },
+  "walletPendingList": "Waiting for the server",
+  "@walletPendingList": {
+    "description": "Heading of the list of pending coins."
+  },
+  "walletGift": "Starting gift",
+  "@walletGift": {
+    "description": "The coins every new player gets."
+  },
+  "walletMatchTitle": "{game}, {fee} EC table",
+  "@walletMatchTitle": {
+    "description": "A staked match in the wallet: the game and its table fee.",
+    "placeholders": {
+      "game": {
+        "type": "String"
+      },
+      "fee": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "walletMatchPlaying": "In progress",
+  "@walletMatchPlaying": {
+    "description": "A match still being played."
+  },
+  "walletMatchWon": "Won",
+  "@walletMatchWon": {
+    "description": "A match the player's side won."
+  },
+  "walletMatchLost": "Lost",
+  "@walletMatchLost": {
+    "description": "A match the player's side lost."
+  },
+  "walletMatchLeft": "Quit",
+  "@walletMatchLeft": {
+    "description": "A match the player quit, in the wallet."
+  },
+  "walletDealsWon": "{count, plural, =0{no deals won} =1{1 deal won} other{{count} deals won}}",
+  "@walletDealsWon": {
+    "description": "How many deals the player's team won in a match.",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "walletMatchSummary": "{result} · {deals}",
+  "@walletMatchSummary": {
+    "description": "A match's result and the deals won, for example 'Won · 6 deals won'.",
+    "placeholders": {
+      "result": {
+        "type": "String"
+      },
+      "deals": {
+        "type": "String"
+      }
+    }
+  },
+  "walletHowTitle": "How to earn",
+  "@walletHowTitle": {
+    "description": "Heading of the ways to earn coins."
+  },
+  "walletHowDeal": "Every deal your team wins pays you {percent}% of your table fee.",
+  "@walletHowDeal": {
+    "description": "How deals won pay.",
+    "placeholders": {
+      "percent": {
+        "type": "int"
+      }
+    }
+  },
+  "walletHowMatch": "Win a match against bots and you take the pot: {fees} times your fee.",
+  "@walletHowMatch": {
+    "description": "How winning a match pays.",
+    "placeholders": {
+      "fees": {
+        "type": "int",
+        "example": "2"
+      }
+    }
+  },
+  "walletHowLoss": "Lose a match and you add {percent}% of the pot.",
+  "@walletHowLoss": {
+    "description": "How losing a match costs.",
+    "placeholders": {
+      "percent": {
+        "type": "int",
+        "example": "25"
+      }
+    }
+  },
+  "walletHowQuit": "Quit a match and you get part of the pot back: more when your team is ahead.",
+  "@walletHowQuit": {
+    "description": "How quitting a match pays."
+  },
+  "walletHowTie": "A game that ends level gives back every fee you paid in it.",
+  "@walletHowTie": {
+    "description": "How a tied game pays."
+  },
+  "walletHowPractice": "Practice matches are free and pay nothing.",
+  "@walletHowPractice": {
+    "description": "Practice matches move no coins."
+  },
+  "walletError": "Your coins could not be read. Restart the app to try again.",
+  "@walletError": {
+    "description": "Shown when the wallet cannot be read from the phone."
+  },
+  "settingsTableFeeHelp": "Each match costs {fee} EC. Every deal your team wins pays you {deal} EC, and the winning side splits the pot.",
+  "@settingsTableFeeHelp": {
+    "description": "What the chosen table fee means, for any game.",
+    "placeholders": {
+      "fee": {
+        "type": "int",
+        "format": "decimalPattern"
+      },
+      "deal": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "tableFeeChoice": "{fee}",
+  "@tableFeeChoice": {
+    "description": "A table fee on the settings buttons, without the currency.",
+    "placeholders": {
+      "fee": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "signInWithGoogle": "Sign in with Google",
+  "@signInWithGoogle": {
+    "description": "Button that starts Google sign-in."
+  },
+  "signInBonusNote": "First sign-up with Google: {amount} EC bonus.",
+  "@signInBonusNote": {
+    "description": "The one-off bonus for signing up with Google.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "signedInAs": "Signed in as {name}",
+  "@signedInAs": {
+    "description": "The signed-in account, by its Google name.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "signedInWithGoogle": "Signed in with Google",
+  "@signedInWithGoogle": {
+    "description": "The signed-in account, when Google gave no name."
+  },
+  "signedInHelp": "Your coins are kept on our server and follow you to your other phones.",
+  "@signedInHelp": {
+    "description": "What signing in does."
+  },
+  "signOutButton": "Sign out",
+  "@signOutButton": {
+    "description": "Button that signs out."
+  },
+  "signOutTitle": "Sign out?",
+  "@signOutTitle": {
+    "description": "Title of the dialog before signing out."
+  },
+  "signOutBody": "You will play as a new guest on this phone. Sign in again any time to get back to your coins.",
+  "@signOutBody": {
+    "description": "What signing out does."
+  },
+  "signOutUnsynced": "Some of your progress has not been uploaded yet. It stays on this phone and uploads when you sign in again.",
+  "@signOutUnsynced": {
+    "description": "Shown after signing out with progress not yet uploaded."
+  },
+  "signInBonus": "Welcome! Your {amount} EC sign-up bonus has been added.",
+  "@signInBonus": {
+    "description": "Shown after a first sign-up with Google.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "signInDone": "Signed in.",
+  "@signInDone": {
+    "description": "Shown after signing in, with nothing more to say."
+  },
+  "signInMoved": "Signed in. {amount} EC from your guest play were added.",
+  "@signInMoved": {
+    "description": "Shown after signing in to an existing account, with the coins the guest brought.",
+    "placeholders": {
+      "amount": {
+        "type": "int",
+        "format": "decimalPattern"
+      }
+    }
+  },
+  "signInOffline": "Signing in needs a connection. Try again when you are online.",
+  "@signInOffline": {
+    "description": "Shown when sign-in cannot reach the server."
+  },
+  "signInFailed": "Google sign-in did not work. Try again.",
+  "@signInFailed": {
+    "description": "Shown when Google sign-in fails."
+  },
+  "onlineUnavailable": "Online features are not set up in this build. You can play offline.",
+  "@onlineUnavailable": {
+    "description": "Shown in a build without online services."
+  },
+  "syncSynced": "Your progress is up to date.",
+  "@syncSynced": {
+    "description": "Sync status: everything is uploaded."
+  },
+  "syncSyncing": "Uploading your progress…",
+  "@syncSyncing": {
+    "description": "Sync status: uploading now."
+  },
+  "syncOffline": "Offline. Your progress is kept on this phone and uploads later.",
+  "@syncOffline": {
+    "description": "Sync status: the server could not be reached."
+  },
+  "syncSignedOutElsewhere": "Your sign-in has ended. Sign in again to upload your progress.",
+  "@syncSignedOutElsewhere": {
+    "description": "Sync status: the session ended."
+  },
+  "walletHistory": "Settled matches",
+  "@walletHistory": {
+    "description": "Heading of the matches the server has settled."
+  },
+  "walletMatchRejected": "Rejected by the server",
+  "@walletMatchRejected": {
+    "description": "A match whose log the server could not check."
+  },
+  "walletMatchPractice": "{game}, practice",
+  "@walletMatchPractice": {
+    "description": "A settled practice match.",
+    "placeholders": {
+      "game": {
+        "type": "String"
+      }
+    }
+  },
+  "signInBonusLater": "Signed in. Your sign-up bonus is added when your coins first sync.",
+  "@signInBonusLater": {
+    "description": "Shown after a first sign-up in a build without the game server yet."
+  },
+  "syncNoServer": "Your progress is kept on this phone. Coins sync once the game server is set up.",
+  "@syncNoServer": {
+    "description": "Sync status: accounts work, but the game server is not set up yet."
+  }
+}

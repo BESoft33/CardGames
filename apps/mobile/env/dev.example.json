@@ -1,0 +1,7 @@
+{
+  "SUPABASE_URL": "https://ylvwsollcphtjvzvtpjq.supabase.co",
+  "SUPABASE_PUBLISHABLE_KEY": "the project's publishable (anon) key",
+  "SERVER_URL": "",
+  "GOOGLE_WEB_CLIENT_ID": "the Web application client ID, ending in .apps.googleusercontent.com",
+  "GOOGLE_IOS_CLIENT_ID": ""
+}

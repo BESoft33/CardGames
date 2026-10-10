@@ -1,0 +1,28 @@
+# Pub workspace root (AGENTS.md §3). All packages share one resolution and one
+# pubspec.lock. Run `flutter pub get` here; `dart pub get` cannot resolve the
+# Flutter app.
+name: card_games_workspace
+publish_to: none
+
+environment:
+  sdk: ^3.13.0
+
+workspace:
+  - apps/mobile
+  - packages/*
+  - server
+
+dependencies:
+  bots: any
+  game_core: any
+  game_twentynine: any
+
+dev_dependencies:
+  lints: ^6.1.0
+
+# Bundle SQLite3MultipleCiphers instead of plain SQLite, so the local
+# database can be encrypted (AGENTS.md §12). Read by package:sqlite3.
+hooks:
+  user_defines:
+    sqlite3:
+      source: sqlite3mc

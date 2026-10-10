@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 11 and lower. android:allowBackup="false" already turns backup
+     off there; these rules exclude everything in case it is ever turned
+     back on (docs/decisions.md D-019). -->
+<full-backup-content>
+    <exclude domain="root" path="." />
+    <exclude domain="device_root" path="." />
+    <exclude domain="external" path="." />
+</full-backup-content>

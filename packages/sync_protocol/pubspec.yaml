@@ -1,0 +1,17 @@
+name: sync_protocol
+description: >-
+  The event log format shared by the app and the server (AGENTS.md §9): the
+  event envelope, its hash chain and identifiers. Pure Dart.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  crypto: ^3.0.7
+  game_core: any
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.31.1

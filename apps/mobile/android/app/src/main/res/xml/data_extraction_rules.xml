@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Android 12 and higher: nothing is backed up to the cloud or copied to a
+     new device. The database key lives in the Android Keystore and cannot
+     leave this device, so a copied database or secure-storage file could
+     not be opened anyway (AGENTS.md §12, docs/decisions.md D-019).
+     A section with no rules would allow everything, so each one excludes
+     the app's whole private storage. -->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="device_root" path="." />
+        <exclude domain="external" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" path="." />
+        <exclude domain="device_root" path="." />
+        <exclude domain="external" path="." />
+    </device-transfer>
+</data-extraction-rules>

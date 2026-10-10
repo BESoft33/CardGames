@@ -1,0 +1,24 @@
+name: cardgames_server
+description: >-
+  The game server (AGENTS.md §2): checks uploaded match logs by replaying
+  them with the shared rules, keeps the coin ledger, and merges guest
+  accounts into signed-in ones.
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.13.0
+
+dependencies:
+  crypto: ^3.0.7
+  game_core: any
+  game_twentynine: any
+  http: ^1.6.0
+  postgres: ^3.5.19
+  shelf: ^1.4.2
+  shelf_router: ^1.1.4
+  sync_protocol: any
+
+dev_dependencies:
+  lints: ^6.1.0
+  test: ^1.31.1
